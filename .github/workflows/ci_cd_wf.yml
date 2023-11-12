@@ -23,12 +23,9 @@ jobs:
 
       - name: Install Dependencies
         run: |
+          python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
       - name: Run tests
         run: |
-<<<<<<< HEAD
-          python -m pip install --upgrade pip
           python -m pytest --cov=src tests
-=======
-          python -m pytest --cov=week1-devops tests
->>>>>>> test1
+
